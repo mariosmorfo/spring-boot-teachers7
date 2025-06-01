@@ -66,7 +66,7 @@
     </style>
 </head>
 <body>
-<div th:replace="~{fragments/header :: headerFragment}"></div>
+<div th:replace="~{fragment/header :: headerFragment}"></div>
 
 <div class="main-content bg-gray-50 min-h-screen flex items-center justify-center p-4">
     <form th:action="@{/login}" method="POST" class="w-full max-w-md bg-white p-8 rounded-lg shadow-md">
@@ -118,6 +118,6 @@
 
 <div th:if="${param.error}" th:text="${session['SPRING_SECURITY_LAST_EXCEPTION'].message}"></div>
 
-<div th:replace="~{fragments/footer :: footerFragment}"></div>
+<div th:replace="~{fragment/footer :: footerFragment}"></div>
 </body>
 </html>
